@@ -10,7 +10,7 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 
-from autoguix.core.types import MouseButton, Point, Region, Size
+from pyautox.core.types import MouseButton, Point, Region, Size
 
 
 def _make_mock_cg():
@@ -49,7 +49,7 @@ def _make_mock_cg():
 @pytest.fixture
 def backend():
     """Create a MacOSBackend with a mocked CoreGraphics."""
-    from autoguix.backends.macos_backend import MacOSBackend
+    from pyautox.backends.macos_backend import MacOSBackend
 
     b = MacOSBackend()
     b._cg = _make_mock_cg()
@@ -131,7 +131,7 @@ class TestKeyboardOps:
 
 class TestNotInitialized:
     def test_ensure_ready_raises(self):
-        from autoguix.backends.macos_backend import MacOSBackend
+        from pyautox.backends.macos_backend import MacOSBackend
 
         b = MacOSBackend()
         with pytest.raises(RuntimeError, match="not initialized"):

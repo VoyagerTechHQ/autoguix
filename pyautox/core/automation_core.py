@@ -6,8 +6,8 @@ from typing import List, Optional
 
 from PIL import Image
 
-from autoguix.core.backend_base import BackendBase
-from autoguix.core.types import LocateMode, MouseButton, Point, Region, Size
+from pyautox.core.backend_base import BackendBase
+from pyautox.core.types import LocateMode, MouseButton, Point, Region, Size
 
 
 def _run(coro):
@@ -38,7 +38,7 @@ class AutomationCore:
     def _ensure_initialized(self) -> BackendBase:
         if not self._initialized or self._backend is None:
             raise RuntimeError(
-                "AutoGUI-X is not initialized. Call autoguix.init() first."
+                "AutoGUI-X is not initialized. Call pyautox.init() first."
             )
         return self._backend
 
@@ -52,7 +52,7 @@ class AutomationCore:
             raise OSError(
                 f"AutoGUI-X currently only supports macOS, got platform={sys.platform!r}"
             )
-        from autoguix.backends.macos_backend import MacOSBackend
+        from pyautox.backends.macos_backend import MacOSBackend
 
         self._backend = MacOSBackend()
         _run(self._backend.initialize())

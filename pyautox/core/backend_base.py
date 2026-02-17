@@ -5,7 +5,7 @@ from typing import List, Optional, Tuple
 
 from PIL import Image
 
-from autoguix.core.types import LocateMode, MouseButton, Point, Region, Size
+from pyautox.core.types import LocateMode, MouseButton, Point, Region, Size
 
 
 class BackendBase(ABC):

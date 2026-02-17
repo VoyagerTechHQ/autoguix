@@ -6,8 +6,8 @@ from typing import List, Optional
 import numpy as np
 from PIL import Image
 
-from autoguix.core.backend_base import BackendBase
-from autoguix.core.types import LocateMode, MouseButton, Point, Region, Size
+from pyautox.core.backend_base import BackendBase
+from pyautox.core.types import LocateMode, MouseButton, Point, Region, Size
 
 # ---------------------------------------------------------------------------
 # macOS keycode mapping  (Virtual Key Codes – Inside Macintosh)
@@ -295,7 +295,7 @@ class MacOSBackend(BackendBase):
         except ImportError:
             raise ImportError(
                 "OpenCV is required for image location. "
-                "Install with: pip install 'autoguix[locate]'"
+                "Install with: pip install 'pyautox[locate]'"
             )
 
         screenshot = await self.take_screenshot(region)
@@ -329,7 +329,7 @@ class MacOSBackend(BackendBase):
         except ImportError:
             raise ImportError(
                 "OpenCV is required for image location. "
-                "Install with: pip install 'autoguix[locate]'"
+                "Install with: pip install 'pyautox[locate]'"
             )
 
         screenshot = await self.take_screenshot(region)

@@ -8,7 +8,7 @@ Usage:
     python examples/basic_demo.py
 """
 
-import autoguix as ag
+import pyautox as ag
 
 
 def main():

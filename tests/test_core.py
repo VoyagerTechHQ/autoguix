@@ -5,9 +5,9 @@ from unittest.mock import AsyncMock, patch
 
 import pytest
 
-from autoguix.core.automation_core import AutomationCore
-from autoguix.core.backend_base import BackendBase
-from autoguix.core.types import MouseButton, Point, Region, Size
+from pyautox.core.automation_core import AutomationCore
+from pyautox.core.backend_base import BackendBase
+from pyautox.core.types import MouseButton, Point, Region, Size
 
 
 class MockBackend(BackendBase):
@@ -71,7 +71,7 @@ class TestAutomationCoreLifecycle:
 
     def test_init_on_non_darwin_raises(self):
         core = AutomationCore()
-        with patch("autoguix.core.automation_core.sys") as mock_sys:
+        with patch("pyautox.core.automation_core.sys") as mock_sys:
             mock_sys.platform = "linux"
             with pytest.raises(OSError, match="only supports macOS"):
                 core.init()

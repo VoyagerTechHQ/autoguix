@@ -9,8 +9,8 @@ from typing import List, Optional
 
 from PIL import Image
 
-from autoguix.core.automation_core import AutomationCore
-from autoguix.core.types import LocateMode, MouseButton, Point, Region, Size
+from pyautox.core.automation_core import AutomationCore
+from pyautox.core.types import LocateMode, MouseButton, Point, Region, Size
 
 __version__ = "0.1.0"
 __author__ = "AutoGUI-X Contributors"

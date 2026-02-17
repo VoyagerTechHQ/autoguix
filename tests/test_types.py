@@ -1,6 +1,6 @@
 """Tests for core data types."""
 
-from autoguix.core.types import LocateMode, MouseButton, Point, Region, Size
+from pyautox.core.types import LocateMode, MouseButton, Point, Region, Size
 
 
 class TestPoint:
