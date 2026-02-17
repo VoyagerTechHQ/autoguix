@@ -2,8 +2,11 @@
 
 **Modern macOS GUI Automation for Python**
 
-[![Python Version](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
-[![License](https://img.shields.io/badge/license-BSD--3--Clause-green.svg)](LICENSE)
+[![PyPI version](https://img.shields.io/pypi/v/pyautox.svg)](https://pypi.org/project/pyautox/)
+[![PyPI downloads](https://img.shields.io/pypi/dm/pyautox.svg)](https://pypi.org/project/pyautox/)
+[![Python Version](https://img.shields.io/pypi/pyversions/pyautox.svg)](https://pypi.org/project/pyautox/)
+[![License](https://img.shields.io/pypi/l/pyautox.svg)](LICENSE)
+[![Tests](https://github.com/VoyagerTechHQ/pyautox/actions/workflows/tests.yml/badge.svg)](https://github.com/VoyagerTechHQ/pyautox/actions/workflows/tests.yml)
 [![macOS](https://img.shields.io/badge/platform-macOS-lightgrey.svg)](https://www.apple.com/macos/)
 
 PyAutoX is a modern, fast, and reliable GUI automation library specifically designed for macOS. It provides a clean Python API for controlling the mouse, keyboard, and screen, with 100% compatibility with PyAutoGUI's interface.
